@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.blogspot.drcodd.metricclock.MetricClock">
+    <item
+        android:id="@+id/mountain"
+        android:orderInCategory="2"
+        android:title="Mountain Time - Colorado"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/pacific"
+        android:orderInCategory="1"
+        android:title="Pacific Time - California"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/central"
+        android:orderInCategory="3"
+        android:title="Central - Chicago"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/eastern"
+        android:orderInCategory="4"
+        android:title="Eastern Time - East Coast U.S."
+        app:showAsAction="never" />
+</menu>

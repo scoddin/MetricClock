@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.blogspot.drcodd.metricclock.MetricClock"
+    tools:showIn="@layout/activity_metric_clock"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="81dp">
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStrip"
+        android:orientation="horizontal"
+        android:background="?android:attr/dividerVertical"
+        style="?android:attr/buttonStyle"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <Button
+            android:id="@+id/clockButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clock"
+            android:textSize="@dimen/buttonFontSize"
+
+            />
+
+        <Button
+            android:id="@+id/timerButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="timer"
+            android:textSize="@dimen/buttonFontSize" />
+
+        <Button
+            android:id="@+id/stopButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_watch"
+            android:textAlignment="center"
+            android:textSize="@dimen/buttonFontSize" />
+
+        <Button
+            android:id="@+id/alarmButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm"
+            android:textSize="@dimen/buttonFontSize"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/clockImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        android:adjustViewBounds="true"
+
+        android:background="@android:color/white"
+        android:contentDescription="@string/metric_clock"
+        app:layout_constraintBottom_toTopOf="@+id/clockText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStrip"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/clockText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="@string/clock"
+
+
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clockImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

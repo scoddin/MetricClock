@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" >Metric Clock </string>
+    <string name="action_settings"> Settings </string>
+
+    <string name="metric_clock">Metric Clock</string>
+
+    <string name="alarm">Alarm</string>
+    <string name="clock">Clock</string>
+    <string name="stop_watch">Stop Watch</string>
+    <string name="timer">Timer</string>
+</resources>
